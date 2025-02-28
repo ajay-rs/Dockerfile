@@ -18,5 +18,5 @@ jobs:
       run: docker build . -t ajay590/myfirstpush:latest
     - name: push image to docker hub
       run:
-        docker login -u ajay590 -p ${{ secrets. dockerhubtoken }}
+        docker login -u ajay590 -p ${{ secrets. DOCKERHUBPASSWORD }}
         docker push ajay590/myfirstpush:latest
